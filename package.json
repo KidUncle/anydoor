@@ -2,7 +2,10 @@
   "name": "anydoor",
   "version": "1.0.0",
   "description": "NodeJS Static Web server",
-  "main": "index.js",
+  "main": "src/app.js",
+  "bin": {
+    "anydoor": "bin/anydoor"
+  },
   "scripts": {
     "lint": "eslint",
     "fix": "eslint --fix"
@@ -22,7 +25,11 @@
     "url": "https://github.com/KidUncle/anydoor/issues"
   },
   "homepage": "https://github.com/KidUncle/anydoor#readme",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "handlebars": "^4.7.6",
+    "yargs": "^15.3.1"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
